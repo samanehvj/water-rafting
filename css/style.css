@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+.hero {
+  background-image: url("../imgs/hero.jpg");
+  background-size: cover;
+  height: 500px;
+}
+.bg-warning {
+  background-color: #f2d682 !important;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #3cb2df;
+  color: white;
+  transform: rotateY(180deg);
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-weight: bold;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  color: white;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: gray;
+}
+
+.errorpopup {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  color: crimson;
+}
+
+.error .errorpopup {
+  opacity: 1;
+}
+.d-flex justify-content-around bg-warning {
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
